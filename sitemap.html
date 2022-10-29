@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+      body{
+          background: color #79a47e;;
+          color:#111812;
+          margin:5px;
+      }
+      .class{
+          margin:20px;
+      }
+  </style>
+</head>
+<body>
+        <form action="https://oim-apis.herokuapp.com/form2" method="post">
+
+          <div>
+            <input type="text" name="x" id="x-input">
+          </div>
+          <div>
+            <input type="text" name="y" id="y-input">
+          </div>
+          <button>click</button>
+
+          <div class="class">
+            <div class="class">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="username"
+              id="name"
+              placeholder="enter your name"
+              size="15"
+            />
+          </div>
+    
+          <div>
+            <label for="pw"> Password: </label>
+            <input
+              type="password"
+              placeholder="enter your password"
+              id="pw"
+              size="15"
+            />
+          </div>
+    </div>
+    <div class="class">
+          <div>
+            Gender:
+            <label for="male">
+              Male:<input type="radio" name="gender" value="m" id="male" />
+            </label>
+            <label for="female">
+              Female:<input type="radio" name="gender" value="f" id="female" />
+            </label>
+          </div>
+        </div>
+    
+    <div class="class">
+          <div>
+            <p>What is your favorite?</p>
+    
+            <input type="radio" name="team" id="cats" value="cats" />
+            <label for="cats">Cats!</label>
+    
+            <input type="radio" name="team" id="rm" value="real madrid" />
+            <label for="rm">Real Madrid</label>
+    
+            <input type="radio" name="team" id="manu" value="Manchester United" />
+            <label for="manu">Manchester United</label>
+          </div>
+    
+          <div>
+            <input type="reset" />
+          </div>
+    </div>
+    
+    <div class="class">
+    <p>My favorite topics are:</p>
+            <div>
+            <input type="checkbox" name="topic" id="HTML" value="HTML"/>
+            <label for="HTML">Basic HTML</label>
+            <input type="checkbox" name="topic" id="css" value="css"/>
+            <label for="css">CSS</label>
+            <input type="checkbox" name="topic" id="tables" value="tables"/>
+            <label for="tables">Tables</label>
+            </div>
+    </div>
+    
+    
+    <div class="class">
+        <p>Next...</p>
+          <div>
+            <select name="grade" id="name">
+                <option value="">Please state your grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                </select>
+         </div>    
+    </div>
+    
+    <div class="class">
+      <p>Leave a comment...</p>
+            <div>
+                <textarea
+                id="comments"
+                name="comments" 
+                rows="5"
+                cols="25"
+                placeholder="Enter your comment here..."
+                ></textarea>
+            </div>
+    </div>
+    
+    <div class="class">
+            <div>
+                <button type="submit">
+                    SUBMIT <img src="images/mailbox.png"
+                    height="30"
+                    alt="Submit Button">
+                </button>
+                <button type="reset">
+                    SUBMIT <img src="images/reset.png"
+                    height="30"
+                    alt="reset"/>
+                </button>
+            </div>
+    </div>
+        </form> 
+</body>
+</html>
