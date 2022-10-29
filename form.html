@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW2-3</title>
+    <link rel="stylesheet" href="styles/hw2-form.css" />
+</head>
+<body>
+    <form action="https://oim-apis.herokuapp.com/form2" method="post">
+
+        <div class="header">
+            <h1>Customer Feedback</h1>
+        </div>
+
+<div class="white">
+    <fieldset class="fieldset">
+        <legend>Your Information:</legend>
+            <label for="name">Name:</label>
+                <input class="name"
+                type="text"
+                name="username"
+                id="name"
+                placeholder="Enter your name here"
+                size="25"
+            />
+<br>
+<br>
+            <label for="email">Email:</label>
+                <input class="email"
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email here"
+                    size="25"
+                />
+<br>
+<br>
+            <label for="country">Country:</label>
+                <input class="country" list="home" id="country" name="country" size="25">
+      
+      <datalist id="home">
+          <option value="United States">
+          <option value="Morocco">
+          <option value="China">
+        <option value="France">
+      </datalist>
+    </input>
+ </fieldset>
+
+
+
+      <fieldset class="fieldset">
+        <legend>Your Review:</legend>
+        <div class="spc">
+            <label for="airpod">What Apple product did you purchase?</label>
+                <input list="product" id="airpod" name="airpod" size="30px">
+        
+        <datalist id="product">
+            <option value="AirPods Pro 3">
+            <option value="Airpods Pro 2">
+            <option value="Airpods 2">
+        </datalist>
+                </input>
+        </div>
+
+        <div class="spc">
+          <label>What do you think of this product?</label>
+          <br>
+  
+          <input type="radio" name="rate" id="best" value="Great" />
+            <label for="best">Great</label>
+  
+          <input type="radio" name="rate" id="mid" value="Awesome" />
+            <label for="mid">Awesome</label>
+  
+          <input type="radio" name="rate" id="bad" value="Good" />
+            <label for="bad">Good</label>
+
+        </div>
+        <label>Comments:</label>
+        <div>
+
+            <textarea
+            id="comments"
+            name="comments" 
+            rows="5"
+            cols="45"
+            ></textarea>
+        </div>
+    
+        <div class="spcc">
+            <input type="checkbox" name="signup" id="emails" checked value="emails"/>
+            <label for="emails">Sign me up for email updates</label>
+        </div>
+
+        <div>
+            <button type="submit">Submit
+            </button>
+            <button type="reset">Reset
+            </button>
+        </div>
+</div>
+      </fieldset>
+    
+</form>
+<a href="sitemap.html">Site Map</a>
+</body>
+</html>
