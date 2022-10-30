@@ -1,0 +1,33 @@
+
+fieldset{
+    border-color: lightgray;
+    border-width: 1px;
+    margin: 10px;
+}
+.white{
+    background-color: #79a47e;
+    float:center;
+    padding: 15px 10px;
+}
+.header{
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+legend{
+    font-weight:bold;
+}
+ h1{
+    color:white;
+    text-shadow:0 1px black;
+ }
+
+.name {margin: 0px 35px;}
+
+.email{margin: 0px 38px;}
+
+.country{margin: 0px 23px;}
+
+.spc {margin: 10px}
+
+.spcc {margin: 5px 0px 9px 0px}

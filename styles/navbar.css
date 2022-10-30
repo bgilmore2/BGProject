@@ -1,0 +1,138 @@
+.logo{
+    height:35px;
+}
+.img{
+    width:25px;
+    text-align:center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ 
+    overflow: hidden;
+    background-color:#aec6ac;
+    float:right;
+  }
+  
+  li {
+    float: left;
+    list-style-type: none;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family:sans-serif;
+    border-radius: 20px;
+    color: white;
+    margin: 5px;
+    font-size: 18px;
+    width:fit-content;
+    float: right;
+    padding: 8px 16px;
+    list-style-type: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color:#79a47e;
+  }
+
+
+
+
+    .aaa {background-color: #aec6ac;
+        border-radius: 20px;
+        color: white;
+        margin: 5px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        width:fit-content;
+        float: right;
+        font-family: sans-serif;
+        padding: 8px 16px;
+    }
+
+    .bbb {background-color:#ffc0c7;
+        border-radius: 20px;
+        color:black;
+        margin: 5px;
+        text-align: center;
+        text-decoration: none;
+        padding: 8px 16px;
+        font-size: 18px;
+        width:fit-content;
+        font-family: sans-serif;
+        float: right;
+        margin-right:8%;
+        margin-top:2%;
+    }
+
+    .ccc {background-color:#fff4a3;
+        border-radius: 20px;
+        color:black;
+        margin: 5px;
+        text-align: center;
+        text-decoration: none;
+        padding: 8px 16px;
+        font-size: 18px;
+        width:fit-content;
+        font-family: sans-serif;
+        float: right;
+    }
+
+    .ddd {background-color:#04aa6d;
+        border-radius: 20px;
+        color:white;
+        margin: 5px;
+        text-align: center;
+        text-decoration: none;
+        padding: 8px 16px;
+        font-size: 18px;
+        width:fit-content;
+        font-family: sans-serif;
+        float: right; 
+    }
+
+    .aaa:hover{
+        background-color:#58585c;
+    }
+    .bbb:hover{
+        background-color:#f4b2ba;
+    }
+    .ccc:hover{
+        background-color:#f2e797;
+    }
+    .ddd:hover{
+        background-color:#049862;
+    }
+       
+    .icona {
+        width: 22px;
+        text-align: center;
+        float: right;
+        border-radius: 100px;
+    }
+
+    .iga {
+        height: 16px;     
+    }
+
+    .w3size{
+        height:35px;
+    }
+    .spacing{
+        margin-left: 450px;
+    }
+/*I realize this is not a responsive element*/
+    .iconb {
+     width: 25px;
+     text-align: center;
+    }
+
+
+
