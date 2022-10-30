@@ -2,6 +2,13 @@
 body{
   background-color: #AEC6AC;
 }
+h1{
+  color:white;
+  text-shadow:0 1px black;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left:40%;
+}
 .text{
   text-align: center;
   font-size: 30px;
@@ -9,9 +16,9 @@ body{
   color:#AEC6AC;
 }
 .container {
-    background-color: #AEC6AC;
+    background-color: #79a47e;
     display: grid;
-    
+    margin-top:5%;
 position:absolute;
 top:0;
 bottom:0;

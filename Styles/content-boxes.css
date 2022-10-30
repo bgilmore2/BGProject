@@ -84,7 +84,13 @@ right: 0;
 }
 
 
-
+.vid{
+    width:90%;
+    margin-left:0%;
+    margin-top:-10%;
+    position:relative;
+    
+}
 .sideContainer{
     padding: 0px;
     text-align:center;

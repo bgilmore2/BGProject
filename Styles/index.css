@@ -54,7 +54,7 @@ background-position: 0px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position:absolute;
   margin-left:25%;
-  margin-top: 16%
+  margin-top: 21%
 }
 
   html {
@@ -62,11 +62,11 @@ background-position: 0px;
   }
 
 .homeimg{
-  width: 110%;
+  width: 112%;
   float: right;
 position: absolute;
 margin-left:20%;
-margin-top:-15%;
+margin-top:-8%;
 }
 
 .description{
@@ -74,7 +74,8 @@ margin-top:-15%;
   color:white;
   position:absolute;
   margin-left:10%;
-  margin-top: 45%
+  margin-top: 45%;
+  text-align:center;
 }
 
 
