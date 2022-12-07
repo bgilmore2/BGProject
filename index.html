@@ -20,7 +20,7 @@
     <div class="maincontentbox ">
       <!-- Navbar element -->
 
-      <ul class="navbarbox ">
+      <ul class="navbarbox">
         <li>
           <a class="img" href="index.html"
             ><img class="logo" src="images/BGlogo.png"
@@ -31,6 +31,7 @@
         <li><a href="page2.html">Experience</a></li>
         <li><a href="page3.html">Fields</a></li>
         <li><a href="contact.html">Contact Me</a></li>
+
         <li>
           <a
             class="icona"
@@ -38,7 +39,6 @@
             ><img class="iga" src="images/linkedin.png"
           /></a>
         </li>
-
       </ul>
       <!-- Navbar END -->
 
@@ -67,13 +67,57 @@
           </div>
          
           <div class="gilmore">Gilmore</div>
-          <div class="description">Student at Babson College<br> Aspiring Entrprenuer and Consultant for Start-Ups <br> Located in Dallas and Boston</div>
-
+          <div class="description">Student at Babson College<br> Aspiring Entrprenuer and Consultant for Start-Ups <br> Located in
+            <br>
+            <div onmouseover= "s()" onmouseout= "f()" id="ddemo">Dallas</div>  
+            and 
+            <br>
+            <div onmouseover= "s()" onmouseout= "f()" id="bdemo">Boston</div>
+</div>
     
-           <img class="homeimg"src="images/My project-1.png"/>
+           <img onmouseup= "mouseUp()" onmousedown= "mouseDown()" id="click" alt="homeimg" width="150%" class="homeimg"src="images/My project-1.png"/>
        
  
       </div>
+
+      <script>
+          function mouseDown(){
+        document.getElementById("click").className = "hold";
+       }
+       function mouseUp(){
+        document.getElementById("click").className = "release";
+       }
+       function f() {
+        console.log("...starting...");
+        const demoEl = document.getElementById("ddemo");
+        demoEl.style.fontSize = "20px";
+        const userInput = document.getElementById("num").value;
+        console.log(userInput);
+      }
+      function s(){
+        console.log("...starting...");
+        const demoEl = document.getElementById("ddemo");
+        demoEl.style.fontSize = "30px";
+        const userInput = document.getElementById("num").value;
+        console.log(userInput);
+      };
+      
+      function f() {
+        console.log("...starting...");
+        const demoEl = document.getElementById("bdemo");
+        demoEl.style.fontSize = "20px";
+        const userInput = document.getElementById("num").value;
+        console.log(userInput);
+      }
+      function s(){
+        console.log("...starting...");
+        const demoEl = document.getElementById("bdemo");
+        demoEl.style.fontSize = "30px";
+        const userInput = document.getElementById("num").value;
+        console.log(userInput);
+      };
+   
+      </script>
 
       <!--  Footer  -->
 
@@ -83,7 +127,7 @@
       
           <a
             class="icona"
-            href="mailto:bgilmore2@babson.edu"
+            href="http://mailto:bgilmore2@babson.edu"
             ><img class="iga" src="images/email-16.png"
           /></a>
         </li>

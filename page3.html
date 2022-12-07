@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/content-boxes.css" />
     <link rel="stylesheet" href="styles/page3.css" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Merriweather' rel='stylesheet' type='text/css'>
     <style>
       .right{float:right;}
     </style>
@@ -66,16 +67,50 @@
       <div class="maincontentarea ">
         <h1>Work I've Done:</h1>
             <div style="overflow-x:auto;" class="container">
-                <div class="item item-1 text">Pitches</div>
-                <div class="item item-2 text">Marketing</div>
-                <div class="item item-3 text">Websites</div>
-                <div class="item item-4 text">Funding</div>
-                <div class="item item-5 text">Business Development</div>
+                <div onclick= "p()" id="pdemo"class="item item-1 text">Pitches</div>
+                <div onmouseover= "m()"  id="mdemo"class="item item-2 text">Marketing</div>
+                <div onmouseover= "w()"  id="wdemo"class="item item-3 text">Websites</div>
+                <div onmouseover= "f()"  id="fdemo"class="item item-4 text">Funding</div>
+                <div onmouseover= "bd()"  id="bddemo"class="item item-5 text">Business Development</div>
         </div>
-
-       
- 
       </div>
+      <script>
+      function p() {
+        console.log("...starting...");
+        const demoEl = document.getElementById("pdemo");
+        demoEl.style.innerHTML = "I do consulting for start-ups in need of pitch experience.";
+        demoEl.style.color = "white";
+        demoEl.style.backgroundColor = "black";
+      }
+      function m() {
+        console.log("...starting...");
+        const demoEl = document.getElementById("mdemo");
+        demoEl.style.innerHTML = "I've worked multiple marketing internships.";
+        demoEl.style.color = "white";
+        demoEl.style.backgroundColor = "black";
+      }
+      function w(){
+        console.log("...starting...");
+        const demoEl = document.getElementById("wdemo");
+        demoEl.style.innerHTML = "This class!";
+        demoEl.style.color = "white";
+        demoEl.style.backgroundColor = "black";
+      }
+      function f() {
+        console.log("...starting...");
+        const demoEl = document.getElementById("fdemo");
+        demoEl.style.innerHTML = "Ive been able to help find VC/PE funding for start-ups.";
+        demoEl.style.color = "white";
+        demoEl.style.backgroundColor = "black";
+      }
+      function bd() {
+        console.log("...starting...");
+        const demoEl = document.getElementById("bddemo");
+        demoEl.style.innerHTML = "Ive worked for CORE Construction and collaborated in this department.";
+        demoEl.style.color = "white";
+        demoEl.style.backgroundColor = "black";
+      };
+      </script>
 
       <!--  Footer  -->
 
@@ -85,7 +120,7 @@
       
           <a
             class="icona"
-            href="mailto:bgilmore2@babson.edu"
+            href="http://mailto:bgilmore2@babson.edu"
             ><img class="iga" src="images/email-16.png"
           /></a>
         </li>

@@ -17,7 +17,7 @@
       .right{float:right;}
     </style>
   </head>
-  <body>
+  <body onload='document.form1.text1.focus()'>
     <div class="maincontentbox ">
       <!-- Navbar element -->
 
@@ -64,7 +64,7 @@
       
 
       <div class="maincontentarea ">
-        <form action="https://oim-apis.herokuapp.com/form2" method="post">
+        <form action="https://oim-apis.herokuapp.com/form2" method="post"name="form1" action="#">
 
             <div class="header">
                 <h1>Contact me:</h1>
@@ -83,6 +83,24 @@
                 />
     <br>
     <br>
+    <script>
+      function ValidateEmail(inputText)
+{
+let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+alert("Valid email address!");
+document.form1.email.focus();
+return true;
+}
+else
+{
+alert("Pleas enter valid email address!");
+document.form1.email.focus();
+return false;
+}
+}
+    </script>
                 <label for="email">Email:</label>
                     <input class="email"
                         type="text"
@@ -222,7 +240,7 @@
       
           <a
             class="icona"
-            href="mailto:bgilmore2@babson.edu"
+            href="http://mailto:bgilmore2@babson.edu"
             ><img class="iga" src="images/email-16.png"
           /></a>
         </li>

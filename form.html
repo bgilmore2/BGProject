@@ -7,8 +7,9 @@
     <title>HW2-3</title>
     <link rel="stylesheet" href="styles/hw2-form.css" />
 </head>
-<body>
-    <form action="https://oim-apis.herokuapp.com/form2" method="post">
+<body onload='document.form1.text1.focus()'>
+  
+    <form action="https://oim-apis.herokuapp.com/form2" method="post" name="myForm"action="/action_page.php" onsubmit="return validateForm()" >
 
         <div class="header">
             <h1>Contact Me:</h1>
@@ -34,6 +35,7 @@
                     id="email"
                     placeholder="Enter your email here"
                     size="25"
+                    pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required
                 />
 <br>
 <br>
@@ -106,5 +108,14 @@
     
 </form>
 <a href="sitemap.html">Site Map</a>
+<script>
+function validateForm() {
+    let x = document.forms["myForm"]["name"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  };
+  </script>
 </body>
 </html>

@@ -68,7 +68,7 @@
             <p class="dot">
               
               <h3>Photoshop</h3>
-              <h3>Illustartor</h3>
+              <h3>Illustrator</h3>
               <h3>InDesign</h3>
               <h3>Premiere</h3>
               <h3>PowerPoint</h3>
@@ -79,8 +79,12 @@
               <h3>and More!</h3>
             </p>
           </h3>
-          <h3 class="sub">
-            Interest:
+
+          
+            <h1>Interest:</h1>
+            <br>
+            <br>
+            <h3 class="sub">
             <p class="dot">
               <h3>Leadership</h3>
               <h3>Rotary Club</h3>
@@ -90,12 +94,54 @@
             </p>
           </h3>
         </h2>
-     <img class="girl" src="images/girlworking.jpg" alt="girl" title="girl working"
-          />
-
         
       </div>
-
+      <img src="" alt="" class="girl"/>
+  <script>
+            //create global variables for imageArray, index, 
+            const slides = [
+                "images/girlworking.jpg",
+                "images/leadership.jpg",
+                "images/videogame.jpg",
+            ];
+    
+            const COLORS = [
+             'white', 'black', 'grey'
+            ];
+            const captions = [
+              'software','leadership', 'games'
+            ];
+    
+            //to do: try object to store image file namee, colors and captions together
+            let index = 0;
+            const imgEl = document.querySelector("girl");
+    
+            function slideShow(){
+                //chnage border color around images 
+                //change text under images 
+                //if index is equal to length of the Array
+                if(index == slides.length){
+                    index = 0
+                }
+                //reset index to 0 
+    
+                //display img at index
+                imgEl.src = slides[index];
+    
+                //change color of imgEl to color
+                imgEl.style.border = "10px solid" + COLORS[index];
+                
+                //change index by adding 1
+                index ++;
+    
+                //setTimeout(slideShow, 1000)
+                setTimeout(slideShow, 1000);
+            }
+    
+            document.querySelector("body").onload = function(){
+                slideShow();
+            }
+        </script>
 
       <!--  Footer  -->
 
@@ -106,7 +152,7 @@
       
             <a
               class="icona"
-              href="mailto:bgilmore2@babson.edu"
+              href="http://mailto:bgilmore2@babson.edu"
               ><img class="iga" src="images/email-16.png"
             /></a>
           </li>
