@@ -94,9 +94,7 @@
             </p>
           </h3>
         </h2>
-        
-      </div>
-      <img src="" alt="" class="girl"/>
+        <img src="" alt="" onload= "slideShow()" id="girl" class="girl"/>
   <script>
             //create global variables for imageArray, index, 
             const slides = [
@@ -114,7 +112,7 @@
     
             //to do: try object to store image file namee, colors and captions together
             let index = 0;
-            const imgEl = document.querySelector("girl");
+            const imgEl = document.getElementById("girl");
     
             function slideShow(){
                 //chnage border color around images 
@@ -135,13 +133,15 @@
                 index ++;
     
                 //setTimeout(slideShow, 1000)
-                setTimeout(slideShow, 1000);
+                setTimeout(slideShow, 2000);
             }
     
             document.querySelector("body").onload = function(){
                 slideShow();
             }
-        </script>
+        </script> 
+      </div>
+     
 
       <!--  Footer  -->
 

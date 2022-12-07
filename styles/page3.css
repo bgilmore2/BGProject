@@ -83,3 +83,18 @@ right:0;
   background-image: url(https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=1600);
   background-size:cover;
 }
+@media screen and (max-width: 480px) {
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  body {
+    flex-direction: column;
+    grid-auto-flow: row;
+  }
+  div {
+    font-size: 1.5rem;
+  }
+  
+}
+

@@ -21,3 +21,19 @@ p{
     margin-left:-5%;
     margin-top:-10%;
 }
+@media screen and (max-width: 480px) {
+    img {
+      display: block;
+      max-width: 100%;
+    }
+    body {
+      flex-direction: column;
+      grid-auto-flow: row;
+    }
+    div {
+      font-size: 1.5rem;
+    }
+    
+  }
+  
+  

@@ -67,7 +67,7 @@
       <div class="maincontentarea ">
         <h1>Work I've Done:</h1>
             <div style="overflow-x:auto;" class="container">
-                <div onclick= "p()" id="pdemo"class="item item-1 text">Pitches</div>
+                <div onmouseover= "p()" id="pdemo"class="item item-1 text">Pitches</div>
                 <div onmouseover= "m()"  id="mdemo"class="item item-2 text">Marketing</div>
                 <div onmouseover= "w()"  id="wdemo"class="item item-3 text">Websites</div>
                 <div onmouseover= "f()"  id="fdemo"class="item item-4 text">Funding</div>
@@ -78,37 +78,42 @@
       function p() {
         console.log("...starting...");
         const demoEl = document.getElementById("pdemo");
-        demoEl.style.innerHTML = "I do consulting for start-ups in need of pitch experience.";
         demoEl.style.color = "white";
         demoEl.style.backgroundColor = "black";
+        demoEl.innerHTML = "I do consulting for start-ups in need of pitch experience.";
+        demoEl.style.backgroundImage = 'none';
       }
       function m() {
         console.log("...starting...");
         const demoEl = document.getElementById("mdemo");
-        demoEl.style.innerHTML = "I've worked multiple marketing internships.";
         demoEl.style.color = "white";
         demoEl.style.backgroundColor = "black";
+        demoEl.innerHTML = "Ive had two marketing internships";
+        demoEl.style.backgroundImage = 'none';
       }
       function w(){
         console.log("...starting...");
         const demoEl = document.getElementById("wdemo");
-        demoEl.style.innerHTML = "This class!";
         demoEl.style.color = "white";
         demoEl.style.backgroundColor = "black";
+        demoEl.innerHTML = "This class!";
+        demoEl.style.backgroundImage = 'none';
       }
       function f() {
         console.log("...starting...");
         const demoEl = document.getElementById("fdemo");
-        demoEl.style.innerHTML = "Ive been able to help find VC/PE funding for start-ups.";
         demoEl.style.color = "white";
         demoEl.style.backgroundColor = "black";
+        demoEl.innerHTML = "Ive helped fund start ups with VC/PE ";
+        demoEl.style.backgroundImage = 'none';
       }
       function bd() {
         console.log("...starting...");
         const demoEl = document.getElementById("bddemo");
-        demoEl.style.innerHTML = "Ive worked for CORE Construction and collaborated in this department.";
         demoEl.style.color = "white";
         demoEl.style.backgroundColor = "black";
+        demoEl.innerHTML = "I worked with CORE Construction in their BD department.";
+        demoEl.style.backgroundImage = 'none';
       };
       </script>
 

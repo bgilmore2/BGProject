@@ -31,3 +31,20 @@ legend{
 .spc {margin: 10px}
 
 .spcc {margin: 5px 0px 9px 0px}
+
+@media screen and (max-width: 480px) {
+    img {
+      display: block;
+      max-width: 100%;
+    }
+    body {
+      flex-direction: column;
+      grid-auto-flow: row;
+    }
+    div {
+      font-size: 1.5rem;
+    }
+    
+  }
+  
+  

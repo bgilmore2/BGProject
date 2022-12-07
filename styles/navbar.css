@@ -136,3 +136,16 @@ ul {
 
 
 
+    @media screen and (max-width: 480px) {
+        img {
+          display: block;
+          max-width: 100%;
+        }
+        body {
+          grid-auto-flow: row;
+        }
+        div {
+          font-size: 1.5rem;
+        }
+        
+      }
